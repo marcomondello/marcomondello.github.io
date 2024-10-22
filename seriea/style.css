@@ -15,17 +15,22 @@ body{
     color: var(--first-color);
 }
 header{
+    color: var(--first-color);       
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding-bottom: 10px;
-    background-color: var(--white-color);
-    border-bottom: 0px solid var(--first-color);
 }
 header a{
+    font-weight: 600;
     color: var(--first-color);
+    text-decoration: none;
+}
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-site{
     display: flex;
@@ -54,6 +59,11 @@ header a{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
 }
 .league-header{
     padding: 5px;
@@ -206,5 +216,13 @@ a{
         text-align: center;
         margin-top: 20px;
         margin-left: 0px;
+    }
+}
+@media (max-width: 500px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 20px;
     }
 }
