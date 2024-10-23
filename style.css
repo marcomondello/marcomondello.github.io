@@ -195,7 +195,11 @@ header a{
     }
 }
 @media (max-width: 500px) {
+    .title{
+        font-size: 12px;
+    }
     .menu{
+        font-size: 14px;
         display: flex;
         flex-direction: column;
         gap: 5px;

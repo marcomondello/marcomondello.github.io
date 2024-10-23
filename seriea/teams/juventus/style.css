@@ -9,6 +9,7 @@
     --yellow-color:#DEB244;
     --green-color: #44B952;
     --red-color: #C53B3B;
+    --shadow-color:rgb(26, 26, 77);
 }
 *{
     margin: 0;
@@ -128,13 +129,11 @@ a{
     padding: 30px;
     margin-top: 50px;
     background-color: var(--first-color);
-    width: 90%;
-    height: 550px;
+    width: 70%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    box-shadow: 3px 3px 3px 3px var(--shadow-color);
 }
 .role{
     border-top: solid 2px var(--third-color);
@@ -165,21 +164,21 @@ a{
 .squad-member{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     width: 98%;
     /*border-bottom: solid 2px var(--third-color);*/
     border-radius: 10px;
     flex-wrap: wrap;
 }
 .squad-member img{
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border: solid 3px var(--third-color);
     border-radius: 100%;
     object-fit: cover;
 }
 .squad-member:hover{
-    background-color: var(--fourt-color);
+    background-color: var(--first-color-dark);
 }
 .squad-member-left{
     display: flex;
@@ -192,7 +191,7 @@ a{
     flex-direction: column;
 }
 .squad-member-left-info #name{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 .squad-member-left-info #role{
@@ -202,7 +201,7 @@ a{
 .info{
     font-weight: 500;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--grey-color);
     display: flex;
     align-content: center;
@@ -214,8 +213,8 @@ a{
 }
 .info img{
     border: solid 0px var(--third-color);
-    height:20px;
-    width: 20px;
+    height:15px;
+    width: 15px;
 }
 .squad-member-right{
     display: flex;
@@ -256,7 +255,7 @@ a{
         margin-left: 0px;
     }
     .squad-list{
-        width: 90%;
+        width: 80%;
     }
     .squad-member-right img{
         height: 100%;
@@ -302,6 +301,7 @@ a{
 @media (max-width: 400px){
     .squad-list{
         padding: 10px;
+        width: 80%;
     }
     .squad-member-left{
         font-size: 12px;
