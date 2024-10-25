@@ -101,7 +101,15 @@ header a{
     height: 30px;
     width: 30px;
 }
+#more{
+    text-decoration: underline;
+}
+#description{
+    display: none;
+}
+
 .team-descr{
+    text-align: justify;
     margin-top: 20px;
     margin-left: 80px;
     width: 45%;
@@ -327,6 +335,9 @@ a{
     }
 }
 @media(max-width: 500px){
+    .team-descr{
+        text-align: center;
+    }
     .menu{
         display: flex;
         flex-direction: column;
