@@ -106,10 +106,11 @@ header a{
 }
 #description{
     display: none;
+    text-align: justify;
 }
 
 .team-descr{
-    text-align: justify;
+    text-align: center;
     margin-top: 20px;
     margin-left: 80px;
     width: 45%;
@@ -126,18 +127,41 @@ a{
     color: var(--white-color);
 }
 .center-page{
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 50px;
 }
-.squad-list{
-    padding: 30px;
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Allinea i pulsanti a destra */
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 0px;
     margin-top: 50px;
+}
+.buttons button{
+    color: var(--first-color);
+    background-color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+}
+.buttons button:hover{
+    text-decoration: underline;
+}
+.squad-list{
+    padding: 20px;
+    margin-top: 0px;
     background-color: var(--first-color);
-    width: 70%;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -240,6 +264,32 @@ a{
     width: 50px;
 }
 
+.ranking{
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    gap: 50px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px var(--shadow-color);
+}
+.ranking h3{
+    text-align: center;
+}
+.ranking table{
+    padding: 10px;
+}
+
+.ranking td, th{
+    padding-left: 10px;
+}
+.team-coloum{
+    text-align: left;
+    width: 100%;
+}
+#team-line{
+    border-left: solid 2px var(--third-color);
+}
+
 @media (max-width: 1100px){
     .team-header{
         flex-wrap: wrap;
@@ -263,7 +313,10 @@ a{
         margin-left: 0px;
     }
     .squad-list{
-        width: 80%;
+        justify-content: center;
+        align-items: center;
+        align-content:center;
+        width: 100%;
     }
     .squad-member-right img{
         height: 100%;
@@ -307,9 +360,10 @@ a{
     }
 }
 @media (max-width: 400px){
+    
     .squad-list{
-        padding: 10px;
-        width: 80%;
+        padding: 20px;
+        width: 100%;
     }
     .squad-member-left{
         font-size: 12px;
@@ -335,8 +389,11 @@ a{
     }
 }
 @media(max-width: 500px){
-    .team-descr{
-        text-align: center;
+    .ranking table{
+        padding: 0px;
+    }
+    .title{
+        font-size: 15px;
     }
     .menu{
         display: flex;

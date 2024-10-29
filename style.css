@@ -52,6 +52,7 @@ header a{
 }
 .title{
     font-family: "Josefin Sans", sans-serif;
+    color: var(--first-color);
     font-size: 20px;
     margin-left: 10px;
 }
