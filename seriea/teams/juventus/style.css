@@ -296,7 +296,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 95%;
         text-align: justify;
     }
     .team-header-info{
@@ -358,9 +358,14 @@ a{
         font-size: 15px;
         margin-right: 10px;
     }
+    .center-page{
+        width: 90%;
+    }
 }
 @media (max-width: 400px){
-    
+    .center-page{
+        width: 85%;
+    }
     .squad-list{
         padding: 20px;
         width: 100%;
@@ -389,6 +394,9 @@ a{
     }
 }
 @media(max-width: 500px){
+    .center-page{
+        width: 85%;
+    }
     .ranking table{
         padding: 0px;
     }
