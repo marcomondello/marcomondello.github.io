@@ -28,7 +28,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    
 }
 header a{
     font-weight: 600;
@@ -44,11 +44,9 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    background-color: var(--third-color);
-    margin-left: 20px;
-    border: solid 0px var(--third-color);
+    height: 110px;
+    width: 110px;
+    margin-left: 0px;
     border-radius: 100%;
     object-fit: contain;
     overflow: hidden;
@@ -61,12 +59,13 @@ header a{
     color: var(--first-color);
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .menu{
+    font-size: 20px;
     display: flex;
     gap: 10px;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 .main-page{
     display: flex;
@@ -143,7 +142,7 @@ a{
     align-items: flex-start;
     gap: 30px;
     margin-left: 0px;
-    margin-top: 50px;
+    margin-top: 50px; 
 }
 .buttons button{
     color: var(--first-color);
@@ -296,7 +295,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 95%;
+        width: 90%;
         text-align: justify;
     }
     .team-header-info{
@@ -358,14 +357,9 @@ a{
         font-size: 15px;
         margin-right: 10px;
     }
-    .center-page{
-        width: 90%;
-    }
 }
 @media (max-width: 400px){
-    .center-page{
-        width: 85%;
-    }
+    
     .squad-list{
         padding: 20px;
         width: 100%;
@@ -394,19 +388,29 @@ a{
     }
 }
 @media(max-width: 500px){
-    .center-page{
-        width: 85%;
-    }
     .ranking table{
         padding: 0px;
-    }
-    .title{
-        font-size: 15px;
-    }
+    }   
     .menu{
         display: flex;
         flex-direction: column;
         gap: 5px;
         margin-right: 20px;
+    }
+    .logo-site{
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0%;
+        height: 70px;
+        width: 70px;
+    }
+    .logo-title{
+        margin: 0px;
+        padding: 0px;
+    }
+    .title{
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
     }
 }

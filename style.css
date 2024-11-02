@@ -37,10 +37,9 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    background-color: var(--first-color);
-    margin-left: 20px;
+    height: 110px;
+    width: 110px;
+    margin-left: 0px;
     border: solid 0px var(--first-color);
     border-radius: 100%;
     object-fit: contain;
@@ -54,12 +53,13 @@ header a{
     font-family: "Josefin Sans", sans-serif;
     color: var(--first-color);
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .menu{
+    font-size: 20px;
     display: flex;
     gap: 10px;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 .main-page{
     display: flex;
@@ -216,6 +216,21 @@ header a{
     .wallpaper img{
         width: 300px;
         height: 50%;
+    }
+    .logo-site{
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0%;
+        height: 70px;
+        width: 70px;
+    }
+    .logo-title{
+        margin: 0px;
+        padding: 0px;
+    }
+    .title{
+        margin: 0px;
+        padding: 0px;
     }
     
 }
