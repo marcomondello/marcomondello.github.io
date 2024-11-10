@@ -16,22 +16,27 @@ function showDescription(){
 function showSquadList(){
     document.getElementById('squad-list').style.display = "block";
     document.getElementById('ranking').style.display = "none";
-    ranking_btn.style.backgroundColor = "var(--second-color)";
-    ranking_btn.style.paddingTop = "2px";
-    ranking_btn.style.color = "var(--white-color)";
-    squad_list_btn.style.backgroundColor = "var(--white-color)";
-    squad_list_btn.style.paddingTop = "0px";
-    squad_list_btn.style.color = "var(--first-color)";
+
+    ranking_btn.style.color = "var(--grey-color)";
+    ranking_btn.style.backgroundColor = "var(--box-color)";
+    ranking_btn.style.border="none";
+
+    squad_list_btn.style.color = "var(--second-color)";
+    squad_list_btn.style.backgroundColor = "var(--box-color-dark)";
+    squad_list_btn.style.borderBottom = "solid 2px var(--second-color)"
+
 }
 function showRanking(){
     document.getElementById('squad-list').style.display = "none";
     document.getElementById('ranking').style.display = "block";
-    squad_list_btn.style.backgroundColor = "var(--second-color)";
-    squad_list_btn.style.paddingTop = "2px";
-    squad_list_btn.style.color = "var(--white-color)";
-    ranking_btn.style.backgroundColor= "var(--white-color)";
-    ranking_btn.style.paddingTop = "0px";
-    ranking_btn.style.color = "var(--first-color)";
+
+    ranking_btn.style.color = "var(--second-color)";
+    ranking_btn.style.backgroundColor = "var(--box-color-dark)";
+    ranking_btn.style.borderBottom = "solid 2px var(--second-color)"
+
+    squad_list_btn.style.color = "var(--grey-color)";
+    squad_list_btn.style.backgroundColor = "var(--box-color)";
+    squad_list_btn.style.border="none";
 }
 
 
