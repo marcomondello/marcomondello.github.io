@@ -1,11 +1,12 @@
 
 :root{
- --white-color: #f5f5f5;
+ --white-color: #ffffff;
  --first-color: #1a3550;
  --second-color:#675F8E;
  --third-color:#B7A0B3;
- --box-color: #e9e9e5;
- --box-color-dark: #dbdbd4;
+ --box-color: #dbdbd4;
+ --box-color-dark: #c4c4bc;
+ --grey-color: rgb(109, 107, 107);
 }
 *{
     margin: 0;
@@ -22,12 +23,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-}
-header a{
-    font-weight: 600;
-    color: var(--first-color);
-    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .logo-title{
     display: flex;
@@ -38,9 +35,8 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
-    width: 110px;
-    margin-left: 0px;
+    height: 100px;
+    width: 100px;
     border: solid 0px var(--first-color);
     border-radius: 100%;
     object-fit: contain;
@@ -54,13 +50,11 @@ header a{
     font-family: "Josefin Sans", sans-serif;
     color: var(--first-color);
     font-size: 20px;
-    margin-left: 0px;
 }
-.menu{
-    font-size: 20px;
-    display: flex;
-    gap: 10px;
-    margin-right: 100px;
+.menu img{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
 }
 .main-page{
     display: flex;
@@ -77,10 +71,13 @@ header a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    bottom: 0px;
+    bottom: 400px;
     overflow: hidden;
     width: 100%;  
-    height: 565px;         
+    height: 470px;         
+}
+.wallpaper img{
+    height: 500px;
 }
 .slogan{
     margin-bottom: 5px;
@@ -166,6 +163,48 @@ header a{
     height: 100px;
     width: 100px;
 }
+footer{
+    background-color: var(--box-color);
+    border-top: solid 5px var(--box-color-dark);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.follow-us p{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 15px;
+    width: 100%;
+    color: var(--grey-color);
+}
+.follow-us img{
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+}
+.follow-us img:hover{
+    background-color: var(--third-color);
+    border-radius: 10px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.contact a:hover{
+    background-color: var(--third-color);
+    text-decoration: underline;
+}
+
 @media (max-width: 1500px) {
     .slogan{
         text-align: center;
@@ -210,18 +249,14 @@ header a{
     .wallpaper{
         height: 50%;
     }
-
 }
 @media (max-width: 500px) {
     .title{
         font-size: 12px;
     }
-    .menu{
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-right: 20px;
+    .menu img{
+        height: 20px;
+        width: 20px;
     }
     .wallpaper{
         flex-direction: column;
@@ -265,5 +300,17 @@ header a{
     .leagues-title{
         font-size: 20px;
     }
-    
+    footer{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    .contact{
+        padding: 0px;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 25px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

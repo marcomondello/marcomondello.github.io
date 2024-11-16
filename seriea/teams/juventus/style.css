@@ -23,6 +23,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--first-color);
 }
+.blur {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+}
 header{
     background-color: var(--white-color);
     color: var(--first-color);       
@@ -286,6 +290,96 @@ a{
     border-left: solid 2px var(--third-color);
 }
 
+/*card*/
+.player-card{
+    display: none;
+    height: 750px;
+    width: 600px;
+    background-color: var(--box-color);
+    /*card in the center*/   
+        position: fixed;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        z-index: 10; /* La card è sopra tutto il resto */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--first-color), var(--second-color));
+    color: var(--white-color);
+}
+.player-card-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.player-card-top p, a{
+    width: 100px;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 40%;
+}
+#back{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+#back:hover{
+    background-color: var(--third-color);
+}
+#player-team img{
+    height: 70px;
+    width: 70px;
+}
+#player-img img{
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--third-color);
+    border-radius: 100px;
+}
+#player-number{
+    text-align: center;
+    font-size: 28px;
+}
+.player-name{
+    text-align: center;
+    font-size: 20px;
+}
+.player-name p{
+    text-align: center;
+}
+.player-info{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.player-info p{
+    width: 300px;
+}
+.player-info img{
+    height: 40px;
+    width: 40px;
+}
+.player-nationality{
+    display: flex;
+    justify-content: center;
+}
+.card-section{
+    color: var(--box-color-dark);
+    text-align: center;
+    margin-top: 20px;   
+}
+
 @media (max-width: 1100px){
     .team-header{
         flex-wrap: wrap;
@@ -357,6 +451,10 @@ a{
     .squad-member-right #jersey-number{
         font-size: 15px;
         margin-right: 10px;
+    }
+    .player-card{
+        height: 90%;
+        width: 90%;
     }
 }
 @media (max-width: 400px){
