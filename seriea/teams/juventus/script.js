@@ -48,7 +48,7 @@ function showRanking(){
 //card function
 function showPlayerCard() {
     player_card.style.display = 'block'; // Mostra la card
-    main_page.classList.add('blur');
+    main_page.classList.add('blur');  
 }
 function closeCard(){
     player_card.style.display = 'none';

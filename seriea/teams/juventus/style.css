@@ -28,18 +28,13 @@ body{
     transition: filter 0.3s ease;
 }
 header{
-    background-color: var(--white-color);
     color: var(--first-color);       
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
-}
-header a{
-    font-weight: 600;
-    color: var(--first-color);
-    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .logo-title{
     display: flex;
@@ -50,28 +45,24 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
-    width: 110px;
-    margin-left: 0px;
-    border-radius: 100%;
+    height: 100px;
+    width: 100px;
     object-fit: contain;
     overflow: hidden;
 }
 .logo-site img{
-    object-fit: contain;
-    overflow: hidden;
+    height: 100px;
+    width: 100px;
 }
 .title{
-    color: var(--first-color);
     font-family: "Josefin Sans", sans-serif;
+    color: var(--first-color);
     font-size: 20px;
-    margin-left: 0px;
 }
-.menu{
-    font-size: 20px;
-    display: flex;
-    gap: 10px;
-    margin-right: 100px;
+.menu img{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
 }
 .main-page{
     display: flex;
@@ -79,13 +70,17 @@ header a{
     align-items: center;
 }
 .team-header{
-    padding: 5px;
+    padding: 10px;
     margin-top: 50px;
-    background-color: var(--box-color);
+    background: linear-gradient(to bottom, var(--first-color), var(--second-color));
+    color: var(--white-color);
     width: 80%;
     border-radius: 20px;
     display: flex;
-
+    justify-content: space-between;
+}
+.team-header a{
+    color: var(--white-color);
 }
 .team-header img{
     height: 120px;
@@ -93,21 +88,26 @@ header a{
 }
 .team-header-info{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 15px;
 }
 .team-header-country{
     font-size: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 .team-header-country img{
     margin: 7px;
     height: 30px;
     width: 30px;
 }
+.team-header-country-info{
+    display: flex;
+    align-items: center;
+}
 #more{
     text-decoration: underline;
+    cursor: pointer;
 }
 #description{
     display: none;
@@ -123,8 +123,8 @@ header a{
 .team-info{
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    margin-top: 30px;
+    justify-content: center;
+    gap: 10px;
 }
 a{
     font-style: normal;
@@ -307,26 +307,21 @@ a{
     flex-direction: column;
     background: linear-gradient(to top, var(--first-color), var(--second-color));
     color: var(--white-color);
+    overflow-x: scroll;
 }
 .player-card-top{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .player-card-top p, a{
     width: 100px;
 }
-.card-header{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    gap: 40%;
-}
 #back{
     text-align: center;
     margin: 5px;
+    margin-top: 5px;
     padding: 5px;
     height: 20px;
     width: 20px;
@@ -351,7 +346,11 @@ a{
 }
 .player-name{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    padding-top: 10px;
+    margin: 20px;
+    border: solid 1px var(--third-color);
+    border-radius: 10px;
 }
 .player-name p{
     text-align: center;
@@ -362,6 +361,7 @@ a{
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    font-size: 20px;
 }
 .player-info p{
     width: 300px;
@@ -375,9 +375,36 @@ a{
     justify-content: center;
 }
 .card-section{
+    margin-top: 20px;
     color: var(--box-color-dark);
     text-align: center;
-    margin-top: 20px;   
+    padding-top: 0px;
+    font-size: 15px;
+}
+.player-stat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+.player-stat-row{
+    display: flex; /* Usa flex per allineare i paragrafi orizzontalmente */
+    justify-content: space-between; /* Crea uno spazio tra gli elementi */
+    width: 100%;
+    text-align: center;
+}
+.player-stat-row p{
+    font-size: 20px;
+    margin: 20px;
+    width: 45%;
+}
+.card-footer{
+    font-size: 15px;
+    color: var(--grey-color);
+    text-align: center;
+    margin-top: 50px;
 }
 
 @media (max-width: 1100px){
@@ -494,7 +521,10 @@ a{
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin-right: 20px;
+    }
+    .menu img{
+        height: 20px;
+        width: 20px;
     }
     .logo-site{
         margin: 0px;
@@ -520,5 +550,11 @@ a{
     }
     .role{
         font-size: 14px;
+    }
+    .player-info{
+        font-size: 15px;
+    }
+    .player-stat-row p{
+        font-size: 15px;
     }
 }

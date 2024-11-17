@@ -22,12 +22,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-}
-header a{
-    font-weight: 600;
-    color: var(--first-color);
-    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .logo-title{
     display: flex;
@@ -38,34 +34,29 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
-    width: 110px;
-    margin-left: 0px;
-    border: solid 0px var(--first-color);
-    border-radius: 100%;
+    height: 100px;
+    width: 100px;
     object-fit: contain;
     overflow: hidden;
 }
 .logo-site img{
-    object-fit: contain;
-    overflow: hidden;
+    height: 100px;
+    width: 100px;
 }
 .title{
-    color: var(--first-color);
     font-family: "Josefin Sans", sans-serif;
+    color: var(--first-color);
     font-size: 20px;
-    margin-left: 0px;
+}
+.menu img{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
 }
 .main-page{
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-.menu{
-    font-size: 20px;
-    display: flex;
-    gap: 10px;
-    margin-right: 100px;
 }
 .league-header{
     padding: 5px;
@@ -143,7 +134,7 @@ header a{
 }
 .ranking ol{
     padding: 15px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .ranking a{
     text-decoration: none;
@@ -249,7 +240,6 @@ header a{
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin-right: 20px;
     }
     .logo-site{
         margin: 0px;
@@ -266,5 +256,9 @@ header a{
         font-size: 15px;
         margin: 0px;
         padding: 0px;
+    }
+    .menu img{
+        height: 20px;
+        width: 20px;
     }
 }

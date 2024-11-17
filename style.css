@@ -1,4 +1,3 @@
-
 :root{
  --white-color: #ffffff;
  --first-color: #1a3550;
@@ -37,14 +36,12 @@ header{
     align-items: center;
     height: 100px;
     width: 100px;
-    border: solid 0px var(--first-color);
-    border-radius: 100%;
     object-fit: contain;
     overflow: hidden;
 }
 .logo-site img{
-    object-fit: contain;
-    overflow: hidden;
+    height: 100px;
+    width: 100px;
 }
 .title{
     font-family: "Josefin Sans", sans-serif;
@@ -94,6 +91,7 @@ header{
     width: 70%;
     height: auto;
     background-color: var(--box-color);
+    border: solid 2px var(--box-color-dark);
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -109,7 +107,7 @@ header{
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 15px;
-    border-bottom: solid 1px var(--third-color);
+    border-bottom: solid 1px var(--second-color);
 }
 .leagues-title img{
     height: 30px;
@@ -140,6 +138,7 @@ header{
     width: 70%;
     height: auto;
     background-color: var(--box-color);
+    border: solid 2px var(--box-color-dark);
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -167,9 +166,11 @@ footer{
     background-color: var(--box-color);
     border-top: solid 5px var(--box-color-dark);
     padding: 50px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .follow-us p{
     display: flex;
@@ -203,6 +204,16 @@ footer{
 .contact a:hover{
     background-color: var(--third-color);
     text-decoration: underline;
+}
+
+#copyright-section{
+    margin-top: 50px;
+    text-align: center;
+    width: 99%;
+    color: var(--grey-color);
+}
+#copyright-section:hover{
+    color: var(--first-color);
 }
 
 @media (max-width: 1500px) {
