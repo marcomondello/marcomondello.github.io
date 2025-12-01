@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clima Data</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="top"></div>
-    <div id="main">
-        <div>date: <span id="date"></span></div>
-        <div>time: <span id="time"></span></div>
+   <div id="top">Clima Data</div>
 
-        <div>city: <span id="city"></span></div>
-        <div>elevation: <span id="elevation"></span> meter</div>
-
-        <div>temperature: <span id="temp"></span>°C</div>
-        <div>weather: <span id="weather"></span></div>
-        <div>wind speed: <span id="wind_speed"></span> Km/h</div>
-        <div>wind direction: <span id="wind_dir"></span></div>
-        <div>day/night: <span id="day_night"></span></div>
-
-        <div>dht sensor - temperature: <span id="dht_temp"></span>°C</div>
-        <div>dht sensor - humidity: <span id="dht_hum"></span>%</div>
+<div class="info">
+    <div class="content">
+        <p><span id="date"></span></p>
+        <p><span id="time"></span> <span id="day_night"></span></p>
     </div>
-    <div id="footer"></div>
-    
+    <div class="content">
+        <p><span id="city"></span></p>
+        <p><span id="elevation"></span> mt.</p>
+    </div>
+</div>
+
+<div class="info">
+    <div class="content">
+        <p>Temperature</p>
+        <p><span id="temp"></span>°C</p>
+        <p><span id="weather"></span></p>
+    </div>
+    <div class="content">
+        <p>Wind</p>
+        <p><span id="wind_speed"></span> Km/h</p>
+        <p><span id="wind_dir"></span></p>
+    </div>
+</div>
+
+<div class="info">
+    <div class="content">
+        <p>DHT Sensor</p>
+        <p><span id="dht_temp"></span>°C</p>
+        <p><span id="dht_hum"></span>%</p>
+    </div>
+</div>
+
+<div id="footer">
+    <p>Created by Marco Mondello</p>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
