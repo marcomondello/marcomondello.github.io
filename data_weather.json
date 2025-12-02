@@ -1,13 +1,13 @@
 {
-    "data": "2025-11-28",
-    "time": "16:45",
-    "city": "Ciriè",
+    "date": "2025-12-02",
+    "time": "11:00",
+    "city": "Cirie",
     "elevation": 332.0,
-    "temp": 4.5,
+    "temp_esterna": 8.4,
     "weather": "Coperto",
-    "wind_speed": 2.2,
-    "wind_dir": "OVEST",
-    "day_night": "🌞",
-    "dht_temp": "16.70",
-    "dht_hum": "59.00"
+    "wind_speed": 1.6,
+    "wind_direction": "SUD-OVEST",
+    "day_night": "day",
+    "dht_temp": "16.60",
+    "dht_hum": "65.00"
 }
